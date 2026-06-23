@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eaaf0df5ca00e459fea178ad599933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::cameraController
-  distance: 6.4
-  height: 3
+  distance: 7.51
+  height: 2.8
   pitchAngle: 15.1
   rotateSpeed: 6
   posSmooth: 8
@@ -349,7 +349,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 1
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!1 &410087039
@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 1571241243}
   - component: {fileID: 1571241242}
   - component: {fileID: 1571241241}
+  - component: {fileID: 1571241245}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -604,8 +605,8 @@ Rigidbody:
   m_GameObject: {fileID: 1571241239}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 0.3
+  m_AngularDamping: 0.8
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -619,9 +620,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &1571241242
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -700,6 +701,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571241239}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1571241245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571241239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f7bc48c4a3d464bbcc544212168b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::playerBoost
+  slopeBoost: 4.72
 --- !u!1 &1766072632
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +755,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766072632}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 344a6d0a45e32464991e66e536e80984, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
