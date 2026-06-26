@@ -1,1 +1,7 @@
-https://freestylized.com/material/grass_05/ - grass texture
+https://www.1001fonts.com/cyber-blast-font.html - ui font
+https://www.reddit.com/r/gamedev/comments/79zu4i/free_lowpoly_animated_human/ - human model
+https://assetstore.unity.com/packages/vfx/shaders/retrowave-skies-lite-dynamic-synthwave-skybox-asset-pack-282063 - skybox
+https://sketchfab.com/3d-models/fantasy-cocktail-25b47852ae7c46f88ae852a5548dd91d - cocktail model
+https://www.youtube.com/watch?v=YNlCBqNf3vI - in game music 
+https://www.youtube.com/watch?v=N37ibZZuW20&list=LL&index=3 - menu music 
+https://pixabay.com/sound-effects/film-special-effects-pop-39222/ - pop sound effect

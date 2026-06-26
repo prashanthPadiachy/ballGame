@@ -30,7 +30,9 @@ public class BallPlayerAnimation : MonoBehaviour
 
         float speed = vel.magnitude;
 
-        // Optional: clean tiny values so idle triggers properly
+       // Debug.Log(speed);
+
+    
         if (speed < idleThreshold)
             speed = 0f;
 
