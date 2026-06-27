@@ -133,7 +133,7 @@ public class uiManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("LevelSelect");
+            SceneManager.LoadScene(0);
         }
     }
 
