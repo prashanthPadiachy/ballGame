@@ -15,4 +15,13 @@ public class MusicManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
+    public static void StopMusic()
+    {
+        if (instance != null)
+        {
+            Destroy(instance.gameObject);
+            instance = null;
+        }
+    }
 }

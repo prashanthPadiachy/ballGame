@@ -11,8 +11,9 @@ public class collectibleManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        UpdateUI();
         countText = GameObject.Find("scoreText").GetComponent<TMP_Text>();
+        UpdateUI();
+
     }
 
     public void AddCollectible() {

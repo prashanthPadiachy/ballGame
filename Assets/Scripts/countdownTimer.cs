@@ -16,9 +16,7 @@ public class countdownTimer : MonoBehaviour
 
     private void Update()
     {
-        if (!timerRunning) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        if (!timerRunning) return;
 
         timeLeft -= Time.deltaTime;
 
@@ -26,7 +24,12 @@ public class countdownTimer : MonoBehaviour
         {
             timeLeft = 0;
             timerRunning = false;
-            Debug.Log("Timer finished!");
+
+            UpdateTimerText();
+
+            // Time ran out, restart level
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            return;
         }
 
         UpdateTimerText();
@@ -39,5 +42,9 @@ public class countdownTimer : MonoBehaviour
 
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
-}
 
+    public void StopTimer()
+    {
+        timerRunning = false;
+    }
+}
