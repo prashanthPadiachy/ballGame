@@ -8,11 +8,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioMixer mixer;
     [SerializeField] private Slider vol;
 
-    public void setVolume() 
-    {
-        float volume = vol.value;
-        mixer.SetFloat("volume", Mathf.Log10(volume)*20);
-    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void QuitGame() {
         Application.Quit();
@@ -38,9 +34,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level5");
     }
-    public void loadLevel6()
+
+    public void setVolume()
     {
-        SceneManager.LoadScene("Level6");
+        if (vol == null) return;
+        float volume = vol.value;
+        mixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
 
     private void Start()
